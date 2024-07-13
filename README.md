@@ -7,8 +7,11 @@
 
 # Set permanent primary MongoDB
 rs.initiate({
+
   _id: "rs0",
+  
   members: [
+  
     { _id: 0, host: "mongo1_7:27021", priority: 2 }, // Higher priority to prefer as primary
     
     { _id: 1, host: "mongo2_7:27022", priority: 1 },
