@@ -23,11 +23,14 @@ rs.initiate({
 
 
 # RECONFIG_REPLICA MONGODB
+
   rs.reconfig({
     _id: "rs0",
     members: [
     { _id: 0, host: "mongo1:27034", priority: 2 },
+    
     { _id: 1, host: "mongo2:27035", priority: 1 },
+    
     { _id: 2, host: "mongo3:27036", priority: 1 }
     ]
   });
