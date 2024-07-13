@@ -1,9 +1,9 @@
 # mongo-replica-mongo:4.4.6
 
 # Create RS Keyfile for MongoDB
-  openssl rand -base64 756 > ${PWD}/rs_keyfile
-  chmod 0400 ${PWD}/rs_keyfile
-  chown 999:999 ${PWD}/rs_keyfile
+  - openssl rand -base64 756 > ${PWD}/rs_keyfile
+  - chmod 0400 ${PWD}/rs_keyfile
+  - chown 999:999 ${PWD}/rs_keyfile
 
 # Set permanent primary MongoDB
 
